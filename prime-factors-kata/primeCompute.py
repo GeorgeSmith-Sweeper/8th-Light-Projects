@@ -1,8 +1,15 @@
-def computePrimeFactors(num):
-		if num == 6:
-				return [2,3]
-		if num == 4:
-				return [2,2]
+def computePrimeFactors(num, prime_factors=None):
+		if prime_factors is None:
+			prime_factors = []
 		if num > 1:
-				return [num]
-		return []
+			if num % 2 == 0:
+					prime_factors.append(2)
+					num = num / 2
+					computePrimeFactors(num, prime_factors)
+			elif num % 3 == 0:
+					prime_factors.append(3)
+					num = num / 3
+					computePrimeFactors(num, prime_factors)
+			else:
+				prime_factors.append(num)
+		return prime_factors

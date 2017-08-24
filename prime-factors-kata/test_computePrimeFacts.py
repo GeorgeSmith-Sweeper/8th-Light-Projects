@@ -22,3 +22,14 @@ def test_should_return_list_with_5_if_number_is_5():
 def test_should_return_list_with_2_3_if_number_is_6():
 		assert computePrimeFactors(6) == [2,3]
 
+def test_should_return_list_with_7_if_number_is_7():
+		assert computePrimeFactors(7) == [7]
+
+def test_should_return_list_with_2_2_2_if_number_is_8():
+		assert computePrimeFactors(8) == [2,2,2]
+
+def test_should_return_list_with_3_3_if_number_is_9():
+		assert computePrimeFactors(9) == [3,3]
+
+def test_should_return_list_with_2_5_if_number_is_10():
+		assert computePrimeFactors(10) == [2,5]
