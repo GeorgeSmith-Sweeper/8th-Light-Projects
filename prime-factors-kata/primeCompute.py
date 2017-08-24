@@ -1,3 +1,5 @@
+import math
+
 def computePrimeFactors(num, prime_factors=None):
 		if prime_factors is None:
 			prime_factors = []
@@ -11,5 +13,5 @@ def computePrimeFactors(num, prime_factors=None):
 					num = num / 3
 					computePrimeFactors(num, prime_factors)
 			else:
-				prime_factors.append(num)
+					prime_factors.append(num)
 		return prime_factors

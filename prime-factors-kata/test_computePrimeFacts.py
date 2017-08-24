@@ -33,3 +33,13 @@ def test_should_return_list_with_3_3_if_number_is_9():
 
 def test_should_return_list_with_2_5_if_number_is_10():
 		assert computePrimeFactors(10) == [2,5]
+
+def test_should_return_list_with_11_if_number_is_11():
+		assert computePrimeFactors(11) == [11]
+
+def test_should_return_list_with_2_2_3_if_number_is_12():
+		assert computePrimeFactors(12) == [2,2,3]
+
+def test_should_return_list_with_13_if_number_is_13():
+		assert computePrimeFactors(13) == [13]
+
