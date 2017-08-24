@@ -61,3 +61,18 @@ def test_should_return_list_with_2_3_3_if_number_is_18():
 def test_should_return_list_with_19_if_number_is_19():
 		assert computePrimeFactors(19) == [19]
 
+def test_should_return_list_with_2_2_5_if_number_is_20():
+		assert computePrimeFactors(20) == [2,2,5]
+
+def test_should_return_list_with_3_7_if_number_is_21():
+		assert computePrimeFactors(21) == [3,7]
+
+def test_should_return_list_with_2_11_if_number_is_22():
+		assert computePrimeFactors(22) == [2,11]
+
+def test_should_return_list_with_2_11_if_number_is_22():
+		assert computePrimeFactors(22) == [2,11]
+
+def test_should_return_list_with_5_5_if_number_is_25():
+		assert computePrimeFactors(25) == [5,5]
+
