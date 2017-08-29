@@ -19,3 +19,9 @@ def test_returns_2_3_list_when_value_is_6():
 def test_returns_2_2_2_list_when_value_is_8():
 		assert compute_prime_factors(8) == [2,2,2]
 
+def test_returns_2_5_list_when_value_is_10():
+		assert compute_prime_factors(10) == [2,5]
+
+def test_returns_2_7_7_list_when_value_is_98():
+		assert compute_prime_factors(98) == [2,7,7]
+
