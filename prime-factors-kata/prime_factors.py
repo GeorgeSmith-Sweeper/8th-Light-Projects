@@ -1,9 +1,10 @@
 def compute_prime_factors(num):
 		current_prime = 2
+		prime_factors = []
 		while num >= current_prime:
-				if num == 4:
-						return [current_prime, current_prime]
-				if num == 6:
-						return [current_prime,3]
-				return[num]
-		return []
+				if num % current_prime == 0:
+						prime_factors.append(current_prime)
+						num /= current_prime
+				else:
+						current_prime += 1
+		return prime_factors

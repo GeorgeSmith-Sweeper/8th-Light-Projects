@@ -16,3 +16,6 @@ def test_returns_2_2_list_when_value_is_4():
 def test_returns_2_3_list_when_value_is_6():
 		assert compute_prime_factors(6) == [2,3]
 
+def test_returns_2_2_2_list_when_value_is_8():
+		assert compute_prime_factors(8) == [2,2,2]
+
