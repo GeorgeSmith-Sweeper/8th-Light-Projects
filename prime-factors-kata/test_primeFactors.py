@@ -1,12 +1,8 @@
 import pytest
 from prime_factors import compute_prime_factors
 
-class TestLessThanTwo(object):
-		def test_zero(self):
-				assert compute_prime_factors(0) == []
-
-		def test_one(self):
-				assert compute_prime_factors(1) == []
+def test_one():
+		assert compute_prime_factors(1) == []
 
 def test_2_returns_2():
 		assert compute_prime_factors(2) == [2]
