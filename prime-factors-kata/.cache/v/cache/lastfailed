@@ -2,5 +2,17 @@
   "test_computePrimeFacts.py::test_should_return_2_2_if_number_is_4": true,
   "test_computePrimeFacts.py::test_should_return_2_if_number_is_2": true,
   "test_computePrimeFacts.py::test_should_return_3_if_number_is_3": true,
-  "test_computePrimeFacts.py::test_should_return_list_with_98_if_number_is_98": true
+  "test_computePrimeFacts.py::test_should_return_list_with_98_if_number_is_98": true,
+  "test_primeFactors.py::TestClass": true,
+  "test_primeFactors.py::test_return_emty_lst_for_value_1": true,
+  "test_primeFactors.py::test_returns_2_2_list_if_num_is_4": true,
+  "test_primeFactors.py::test_returns_2_2_list_with_4": true,
+  "test_primeFactors.py::test_returns_2_3_list_with_6": true,
+  "test_primeFactors.py::test_returns_2_5_list_with_10": true,
+  "test_primeFactors.py::test_returns_2_7_7_list_with_98": true,
+  "test_primeFactors.py::test_returns_2_list_with_2": true,
+  "test_primeFactors.py::test_returns_3_7_list_with_21": true,
+  "test_primeFactors.py::test_returns_3_list_with_3": true,
+  "test_primeFactors.py::test_returns_empty_list_with_1": true,
+  "test_primeFactors.py::test_returns_list_2_2_with_num_4": true
 }
