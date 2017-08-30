@@ -3,6 +3,7 @@
   "test_computePrimeFacts.py::test_should_return_2_if_number_is_2": true,
   "test_computePrimeFacts.py::test_should_return_3_if_number_is_3": true,
   "test_computePrimeFacts.py::test_should_return_list_with_98_if_number_is_98": true,
+  "test_primeFactors.py": true,
   "test_primeFactors.py::TestClass": true,
   "test_primeFactors.py::test_return_emty_lst_for_value_1": true,
   "test_primeFactors.py::test_returns_2_2_list_if_num_is_4": true,
