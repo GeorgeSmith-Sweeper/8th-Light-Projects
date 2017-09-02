@@ -1,1 +1,3 @@
-{}
+{
+  "test_setup_prompts.py::test_user_letter_choice_returns_selected_letter": true
+}

@@ -1,14 +1,13 @@
+import sys, os
+
 class setupChoices():
     usr_letter_choice = ' '
     comp_letter_choice = ' '
 
-def user_letter_choice(val):
-    setupChoices.usr_letter_choice = val
+def user_letter_choice():
+    response = input("Player 1, please select a letter")
+    setupChoices.usr_letter_choice = response
 
-def comp_letter_choice(val):
-    setupChoices.comp_letter_choice = val
-
-def who_goes_first(choice):
-    if choice == 1:
-        return "Player One: " + setupChoices.usr_letter_choice + " goes first"
     
+if __name__ == "__main__":
+    user_letter_choice()
