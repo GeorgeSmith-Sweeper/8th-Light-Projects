@@ -4,6 +4,7 @@ from unittest import TestCase
 from setup_prompts import SetupChoices
 from setup_prompts import get_user_input 
 from setup_prompts import user_choice 
+from setup_prompts import who_goes_first
 
 class Test(TestCase):
     @patch('setup_prompts.get_user_input', return_value = 'X')
@@ -12,6 +13,14 @@ class Test(TestCase):
     @patch('setup_prompts.get_user_input', return_value = 'O') 
     def test_choice_O(self, input):
         self.assertEqual(user_choice(), 'O')
-        
+    
+    @patch('setup_prompts.who_goes_first', return_value = 1)
+    def test_player_1_goes_first(self, input):
+        self.assertEqual(who_goes_first(), 1)
+    
+    @patch('setup_prompts.who_goes_first', return_value = 2)
+    def test_player_2_goes_first(self, input):
+        self.assertEqual(who_goes_first(), 2)
+
 if __name__ == "__main__":
     unittest.main()
