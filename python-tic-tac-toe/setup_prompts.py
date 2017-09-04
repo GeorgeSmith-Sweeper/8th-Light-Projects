@@ -40,6 +40,26 @@ def who_goes_first():
         print("That is not a valid choice, please select 1 or 2")
         who_goes_first()
 
+def game_mode_selection():
+    response = get_user_input("Please choose a game mode: 1. Player V Player 2. Player V Computer 3. Computer V Computer  ")
+    response = int(response)
+    if response == 1:
+        print("You have chosen Player V Player")
+        SetupChoices.game_mode_selection = "Player V Player"
+        return "Player V Player"   
+    elif response == 2:
+        print("You have chosen Player V Computer")
+        SetupChoices.game_mode_selection = "Player V Computer"
+        return "Player V Computer"
+    elif response == 3:
+        print("You have chosen Computer V Computer")
+        SetupChoices.game_mode_selection = "Computer V Computer"
+        return "Computer V Computer"
+    else: 
+        print("That is not a valid choice. Choose: 1. Player V Player 2. Player V Computer 3. Computer V Computer")
+        game_mode_selection()
+
 if __name__ == "__main__":
     user_choice()
     who_goes_first()
+    game_mode_selection()
