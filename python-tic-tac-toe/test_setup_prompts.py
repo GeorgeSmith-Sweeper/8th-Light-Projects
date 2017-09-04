@@ -7,8 +7,11 @@ from setup_prompts import user_choice
 
 class Test(TestCase):
     @patch('setup_prompts.get_user_input', return_value = 'X')
-    def test_choice_x(self, input):
+    def test_choice_X(self, input):
         self.assertEqual(user_choice(), 'X')
-
+    @patch('setup_prompts.get_user_input', return_value = 'O') 
+    def test_choice_O(self, input):
+        self.assertEqual(user_choice(), 'O')
+        
 if __name__ == "__main__":
     unittest.main()
