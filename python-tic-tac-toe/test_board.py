@@ -15,6 +15,8 @@ class TestBoardUpdate(TestCase):
         spot = 1
         playerLetter = "X"
         update_board(spot, playerLetter)
+        print(GameBoard.the_board)
+        display_board()
         self.assertEqual(GameBoard.the_board, ["X", " ", " ", " ", " ", " ", " ", " ", " "])
 
 if __name__ == "__main__":

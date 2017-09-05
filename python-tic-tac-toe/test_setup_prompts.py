@@ -2,18 +2,17 @@ import unittest
 from unittest.mock import patch
 from unittest import TestCase
 from setup_prompts import SetupChoices
-from setup_prompts import get_user_input 
-from setup_prompts import user_choice 
+from setup_prompts import user_letter_choice 
 from setup_prompts import who_goes_first
 from setup_prompts import game_mode_selection
 
 class Test(TestCase):
     @patch('setup_prompts.get_user_input', return_value = 'X')
     def test_choice_X(self, input):
-        self.assertEqual(user_choice(), 'X')
+        self.assertEqual(user_letter_choice(), 'X')
     @patch('setup_prompts.get_user_input', return_value = 'O') 
     def test_choice_O(self, input):
-        self.assertEqual(user_choice(), 'O')
+        self.assertEqual(user_letter_choice(), 'O')
     
     @patch('setup_prompts.who_goes_first', return_value = "1")
     def test_player_1_goes_first(self, input):

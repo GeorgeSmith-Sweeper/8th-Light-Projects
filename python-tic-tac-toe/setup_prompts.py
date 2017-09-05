@@ -6,7 +6,7 @@ class SetupChoices():
 def get_user_input(text):
     return input(text)
 
-def user_choice():
+def user_letter_choice():
     response = get_user_input('Player 1, please choose X or O: ')
     response.upper()
     if response == 'X':
@@ -76,6 +76,6 @@ def game_mode_selection():
         game_mode_selection()
 
 if __name__ == "__main__":
-    user_choice()
+    user_letter_choice()
     who_goes_first()
     game_mode_selection()
