@@ -15,23 +15,23 @@ class Test(TestCase):
     def test_choice_O(self, input):
         self.assertEqual(user_choice(), 'O')
     
-    @patch('setup_prompts.who_goes_first', return_value = 1)
+    @patch('setup_prompts.who_goes_first', return_value = "1")
     def test_player_1_goes_first(self, input):
-        self.assertEqual(who_goes_first(), 1)
+        self.assertEqual(who_goes_first(), "1")
     
-    @patch('setup_prompts.who_goes_first', return_value = 2)
+    @patch('setup_prompts.who_goes_first', return_value = "2")
     def test_player_2_goes_first(self, input):
-        self.assertEqual(who_goes_first(), 2)
+        self.assertEqual(who_goes_first(), "2")
     
-    @patch('setup_prompts.game_mode_selection', return_value = 1)
+    @patch('setup_prompts.game_mode_selection', return_value = "1")
     def test_game_mode_selection_1_returns_playerVplayer(self, input):
         self.assertEqual(game_mode_selection(), "Player V Player")
 
-    @patch('setup_prompts.game_mode_selection', return_value = 2)
+    @patch('setup_prompts.game_mode_selection', return_value = "2")
     def test_game_mode_selection_2_returns_playerVcomputer(self, input):
         self.assertEqual(game_mode_selection(), "Player V Computer")
     
-    @patch('setup_prompts.game_mode_selection', return_value = 3)
+    @patch('setup_prompts.game_mode_selection', return_value = "3")
     def test_game_mode_selection_3_returns_computerVcomputer(self, input):
         self.assertEqual(game_mode_selection(), "Computer V Computer")
 
