@@ -11,5 +11,7 @@ def display_board():
     print("===", "===", "===")
     print(GameBoard.the_board[6], GameBoard.the_board[7], GameBoard.the_board[8])
 
-create_board()
-display_board()
+def update_board(spot, playerLetter):
+    GameBoard.the_board[spot - 1] = playerLetter
+
+
